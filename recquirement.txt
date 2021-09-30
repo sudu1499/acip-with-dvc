@@ -5,3 +5,4 @@ tox
 dvc 
 dvc[gdrive]
 numpy
+gunicorn
