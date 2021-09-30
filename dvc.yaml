@@ -1,3 +1,34 @@
 stages:
   load_data:
-    cmd: 
+    cmd:  python src/process_and_load.py --config=params.yaml
+    deps:
+    - src/get_data.py
+    - src/get_param.py
+    - data_given/adult.csv
+    outs:
+    - data/raw/adult.csv
+  split:
+    cmd: python src/split.py --config=params.yaml
+    deps:
+    - data/raw/adult.csv
+    - src/split.py
+    outs:
+    - data/processed/train.csv
+    - data/processed/test.csv
+  eval:
+    cmd: python src/model_train_evl.py --config=params.yaml
+    deps:
+    - data/processed/train.csv
+    - data/processed/test.csv
+    - src/model_train_evl.py
+    params:
+    - model.knn.params.n_neighbours
+    metrics:
+    - reports/scores.json:
+      cache: false
+    - reports/params.json:
+      cache: false
+  outs:
+  - saved_models/knnmodel.pkl
+  - saved_models/ct.pkl
+

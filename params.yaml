@@ -17,4 +17,10 @@ model:
     params:
       n_neighbours: 12
 
+saved_model: saved_models
+
+report: 
+  params: report/params.json
+  metrics: report/metrics.json
+
   
