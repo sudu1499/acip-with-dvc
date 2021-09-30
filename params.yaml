@@ -1,0 +1,20 @@
+base:
+  project: adult census income prediction
+  target:  salary
+
+data_source: data_given/adult.csv
+
+load_data:
+  raw: data/raw/adult.csv
+split: 
+  train:
+    data/processed/train.csv
+  test:
+    data/processed/test.csv
+
+model:
+  knn:
+    params:
+      n_neighbours: 12
+
+  
