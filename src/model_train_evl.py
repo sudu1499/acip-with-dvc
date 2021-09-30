@@ -49,13 +49,13 @@ def model(config_path):
     pk.dump(ct,open(os.path.join(model_,'ct.pkl'),'wb'))
 
     param_=config['report']['params']
-    metrics_=config['report']['metrics']
+    scores_=config['report']['metrics']
 
     with open(param_,'w') as f:
         t=json.dumps(config['model']['knn']['params'])
         f.write(t)
 
-    with open(metrics_,'w') as f:
+    with open(scores_,'w') as f:
         t=json.dumps({'accuracy':score})
         f.write(t)
 

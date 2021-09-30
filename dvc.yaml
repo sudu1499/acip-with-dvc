@@ -2,7 +2,6 @@ stages:
   load_data:
     cmd:  python src/process_and_load.py --config=params.yaml
     deps:
-    - src/get_data.py
     - src/get_param.py
     - data_given/adult.csv
     outs:
@@ -24,11 +23,11 @@ stages:
     params:
     - model.knn.params.n_neighbours
     metrics:
-    - reports/scores.json:
-      cache: false
-    - reports/params.json:
-      cache: false
-  outs:
-  - saved_models/knnmodel.pkl
-  - saved_models/ct.pkl
+    - report/scores.json:
+        cache: false
+    - report/params.json:
+        cache: false
+    outs:
+    - saved_models/knnmodel.pkl
+    - saved_models/ct.pkl
 

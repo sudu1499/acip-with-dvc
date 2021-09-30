@@ -21,6 +21,6 @@ saved_model: saved_models
 
 report: 
   params: report/params.json
-  metrics: report/metrics.json
+  metrics: report/scores.json
 
   

@@ -1,0 +1,59 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/process_and_load.py --config=params.yaml
+    deps:
+    - path: data_given/adult.csv
+      md5: 36330da1e706cf4f8cba1dbe6d437011
+      size: 3844210
+    - path: src/get_param.py
+      md5: eac1538485009075ac339668fdf223fe
+      size: 539
+    outs:
+    - path: data/raw/adult.csv
+      md5: 36330da1e706cf4f8cba1dbe6d437011
+      size: 3844210
+  split:
+    cmd: python src/split.py --config=params.yaml
+    deps:
+    - path: data/raw/adult.csv
+      md5: 36330da1e706cf4f8cba1dbe6d437011
+      size: 3844210
+    - path: src/split.py
+      md5: 8c91ae90291a99184396fc2e5d5f4327
+      size: 873
+    outs:
+    - path: data/processed/test.csv
+      md5: 73d2871c7ebf5f6020144ab1d929d83e
+      size: 961357
+    - path: data/processed/train.csv
+      md5: 582ebfb186c05721038977d1cb405c99
+      size: 2883003
+  eval:
+    cmd: python src/model_train_evl.py --config=params.yaml
+    deps:
+    - path: data/processed/test.csv
+      md5: 73d2871c7ebf5f6020144ab1d929d83e
+      size: 961357
+    - path: data/processed/train.csv
+      md5: 582ebfb186c05721038977d1cb405c99
+      size: 2883003
+    - path: src/model_train_evl.py
+      md5: 0d2e47843c7a60467342a761f2eacdb4
+      size: 2032
+    params:
+      params.yaml:
+        model.knn.params.n_neighbours: 12
+    outs:
+    - path: report/params.json
+      md5: da2483cef6ebcd22d9e6803a4f492cec
+      size: 20
+    - path: report/scores.json
+      md5: 81fd0691afdb80a1cfb99d1f61bf678c
+      size: 32
+    - path: saved_models/ct.pkl
+      md5: 8a9e66a2bbb5316133fa175f9bdec57e
+      size: 1172
+    - path: saved_models/knnmodel.pkl
+      md5: 4c4a7052917ba2c0a0318d26c2f5c7ac
+      size: 5763798
