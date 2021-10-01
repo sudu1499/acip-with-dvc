@@ -7,4 +7,7 @@ dvc[gdrive]
 numpy
 gunicorn
 flask
-
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
