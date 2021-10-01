@@ -39,7 +39,7 @@ def i2():
     else:
         msg='expected income is above 50 k'
     print('*********************************************************************************************************',msg)
-    return render_template('predicted.html',pred=msg) 
+    return render_template('templates/predicted.html',pred=msg) 
 
 if __name__=='__main__':
     app.run(debug=True,port=8000) 
