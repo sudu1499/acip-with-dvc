@@ -5,6 +5,6 @@ tox
 dvc 
 dvc[gdrive]
 numpy
-gunicorn>19.9.0
+gunicorn
 flask
 

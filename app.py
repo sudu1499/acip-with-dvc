@@ -32,6 +32,7 @@ def i2():
         msg='expected income is below 50 k'
     else:
         msg='expected income is above 50 k'
+    print('*********************************************************************************************************',msg)
     return render_template('predicted.html',pred=msg) 
 
 if __name__=='__main__':
