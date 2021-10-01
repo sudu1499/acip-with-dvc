@@ -2,7 +2,7 @@ from flask import Flask,request,render_template,url_for,redirect
 import pickle
 import numpy as np
 import logging
-app=Flask(__name__,static_folder='web_app/static',template_folder='web_app/templates')
+app=Flask(__name__,static_folder='static',template_folder='templates')
 logging.basicConfig(filename='sudu.txt',filemode='a',format='%(asctime)s %(levelname)s-%(message)s',
                     datefmt='%Y-%m-%d %H-%M-%S')
 try:

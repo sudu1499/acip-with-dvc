@@ -338,3 +338,23 @@
 2021-10-01 10-52-08 INFO-127.0.0.1 - - [01/Oct/2021 10:52:08] "POST /predicted HTTP/1.1" 200 -
 2021-10-01 10-52-08 INFO-127.0.0.1 - - [01/Oct/2021 10:52:08] "[36mGET /static/predicted.css HTTP/1.1[0m" 304 -
 2021-10-01 10-52-08 INFO-127.0.0.1 - - [01/Oct/2021 10:52:08] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 11-03-04 INFO- * Restarting with stat
+2021-10-01 11-03-05 WARNING- * Debugger is active!
+2021-10-01 11-03-05 INFO- * Debugger PIN: 337-017-457
+2021-10-01 11-03-05 INFO- * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2021-10-01 11-03-09 INFO-127.0.0.1 - - [01/Oct/2021 11:03:09] "GET / HTTP/1.1" 200 -
+2021-10-01 11-03-09 INFO-127.0.0.1 - - [01/Oct/2021 11:03:09] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
+2021-10-01 11-03-11 INFO-127.0.0.1 - - [01/Oct/2021 11:03:11] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 11-03-15 INFO-127.0.0.1 - - [01/Oct/2021 11:03:15] "POST /predicted HTTP/1.1" 200 -
+2021-10-01 11-03-15 INFO-127.0.0.1 - - [01/Oct/2021 11:03:15] "[36mGET /static/predicted.css HTTP/1.1[0m" 304 -
+2021-10-01 11-03-15 INFO-127.0.0.1 - - [01/Oct/2021 11:03:15] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 11-37-04 INFO- * Restarting with stat
+2021-10-01 11-37-05 WARNING- * Debugger is active!
+2021-10-01 11-37-05 INFO- * Debugger PIN: 337-017-457
+2021-10-01 11-37-05 INFO- * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2021-10-01 11-37-07 INFO-127.0.0.1 - - [01/Oct/2021 11:37:07] "GET / HTTP/1.1" 200 -
+2021-10-01 11-37-07 INFO-127.0.0.1 - - [01/Oct/2021 11:37:07] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
+2021-10-01 11-37-09 INFO-127.0.0.1 - - [01/Oct/2021 11:37:09] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 11-37-14 INFO-127.0.0.1 - - [01/Oct/2021 11:37:14] "POST /predicted HTTP/1.1" 200 -
+2021-10-01 11-37-14 INFO-127.0.0.1 - - [01/Oct/2021 11:37:14] "[36mGET /static/predicted.css HTTP/1.1[0m" 304 -
+2021-10-01 11-37-14 INFO-127.0.0.1 - - [01/Oct/2021 11:37:14] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
