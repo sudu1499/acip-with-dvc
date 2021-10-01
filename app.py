@@ -35,4 +35,4 @@ def i2():
     return render_template('predicted.html',pred=msg) 
 
 if __name__=='__main__':
-    app.run(debug=True,port=8000)
+    app.run(debug=True,port=8000) 
