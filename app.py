@@ -23,7 +23,7 @@ except:
 @app.route('/')
 def index():
     return render_template('indata.html')
-@app.route('/predicted',methods=['GET','POST'])
+@app.route('/predict',methods=['GET','POST'])
 def i2():
     if request.method=='POST':
         pred1=[x for x in request.form.values()]
