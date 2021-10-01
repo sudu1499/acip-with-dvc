@@ -199,3 +199,23 @@
 2021-10-01 08-56-43 INFO-127.0.0.1 - - [01/Oct/2021 08:56:43] "POST /predicted HTTP/1.1" 200 -
 2021-10-01 08-56-43 INFO-127.0.0.1 - - [01/Oct/2021 08:56:43] "[36mGET /static/predicted.css HTTP/1.1[0m" 304 -
 2021-10-01 08-56-43 INFO-127.0.0.1 - - [01/Oct/2021 08:56:43] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 10-08-54 INFO- * Restarting with stat
+2021-10-01 10-08-55 WARNING- * Debugger is active!
+2021-10-01 10-08-55 INFO- * Debugger PIN: 337-017-457
+2021-10-01 10-08-55 INFO- * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2021-10-01 10-08-58 INFO-127.0.0.1 - - [01/Oct/2021 10:08:58] "GET / HTTP/1.1" 200 -
+2021-10-01 10-08-58 INFO-127.0.0.1 - - [01/Oct/2021 10:08:58] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
+2021-10-01 10-09-01 INFO-127.0.0.1 - - [01/Oct/2021 10:09:01] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 10-09-07 INFO-127.0.0.1 - - [01/Oct/2021 10:09:07] "[33mPOST /predicted.html HTTP/1.1[0m" 404 -
+2021-10-01 10-09-44 INFO- * Restarting with stat
+2021-10-01 10-09-45 WARNING- * Debugger is active!
+2021-10-01 10-09-45 INFO- * Debugger PIN: 337-017-457
+2021-10-01 10-09-45 INFO- * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2021-10-01 10-09-53 INFO-127.0.0.1 - - [01/Oct/2021 10:09:53] "GET / HTTP/1.1" 200 -
+2021-10-01 10-09-53 INFO-127.0.0.1 - - [01/Oct/2021 10:09:53] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
+2021-10-01 10-09-53 INFO-127.0.0.1 - - [01/Oct/2021 10:09:53] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 10-09-59 INFO-127.0.0.1 - - [01/Oct/2021 10:09:59] "POST /predicted HTTP/1.1" 200 -
+2021-10-01 10-09-59 INFO-127.0.0.1 - - [01/Oct/2021 10:09:59] "[36mGET /static/predicted.css HTTP/1.1[0m" 304 -
+2021-10-01 10-09-59 INFO-127.0.0.1 - - [01/Oct/2021 10:09:59] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 10-10-00 INFO-127.0.0.1 - - [01/Oct/2021 10:10:00] "GET / HTTP/1.1" 200 -
+2021-10-01 10-10-00 INFO-127.0.0.1 - - [01/Oct/2021 10:10:00] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
