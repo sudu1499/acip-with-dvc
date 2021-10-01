@@ -12,11 +12,11 @@ app=Flask(__name__,static_folder='static',template_folder='templates')
 logging.basicConfig(filename='sudu.txt',filemode='a',format='%(asctime)s %(levelname)s-%(message)s',
                     datefmt='%Y-%m-%d %H-%M-%S')
 try:
-    model=pickle.load(open('saved_models/knnmodel.pkl','rb'))
+    model=pickle.load(open('knnmodel.pkl','rb'))
 except:
     logging.critical("no model pickel file")
 try:
-    ct=pickle.load(open('saved_models/ct.pkl','rb'))
+    ct=pickle.load(open('ct.pkl','rb'))
 except:
     logging.critical('no scaler pickel file')
 

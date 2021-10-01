@@ -532,3 +532,11 @@
 2021-10-01 18-55-11 INFO-127.0.0.1 - - [01/Oct/2021 18:55:11] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
 2021-10-01 18-55-11 INFO-127.0.0.1 - - [01/Oct/2021 18:55:11] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
 2021-10-01 18-55-15 INFO-127.0.0.1 - - [01/Oct/2021 18:55:15] "POST /predict HTTP/1.1" 200 -
+2021-10-01 18-59-16 INFO- * Restarting with stat
+2021-10-01 18-59-17 WARNING- * Debugger is active!
+2021-10-01 18-59-17 INFO- * Debugger PIN: 337-017-457
+2021-10-01 18-59-17 INFO- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-10-01 18-59-25 INFO-127.0.0.1 - - [01/Oct/2021 18:59:25] "GET / HTTP/1.1" 200 -
+2021-10-01 18-59-25 INFO-127.0.0.1 - - [01/Oct/2021 18:59:25] "[36mGET /static/indata.css HTTP/1.1[0m" 304 -
+2021-10-01 18-59-25 INFO-127.0.0.1 - - [01/Oct/2021 18:59:25] "[36mGET /static/image.jpg HTTP/1.1[0m" 304 -
+2021-10-01 18-59-28 INFO-127.0.0.1 - - [01/Oct/2021 18:59:28] "POST /predict HTTP/1.1" 200 -
