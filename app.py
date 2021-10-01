@@ -7,16 +7,16 @@ webapp_root = "web_app"
 
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
-model='saved_models'
+s_model='saved_models'
 app=Flask(__name__,static_folder=static_dir,template_folder=template_dir)
 logging.basicConfig(filename='sudu.txt',filemode='a',format='%(asctime)s %(levelname)s-%(message)s',
                     datefmt='%Y-%m-%d %H-%M-%S')
 try:
-    model=pickle.load(open(os.path.join(model,'knnmodel.pkl'),'rb'))
+    model=pickle.load(open(os.path.join(s_model,'knnmodel.pkl'),'rb'))
 except:
     logging.critical("no model pickel file")
 try:
-    ct=pickle.load(open(os.path.join(model,'ct.pkl'),'rb'))
+    ct=pickle.load(open(os.path.join(s_model,'ct.pkl'),'rb'))
 except:
     logging.critical('no scaler pickel file')
 
