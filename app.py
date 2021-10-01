@@ -25,21 +25,22 @@ def index():
     return render_template('indata.html')
 @app.route('/predicted',methods=['GET','POST'])
 def i2():
-    pred1=[x for x in request.form.values()]
-    pred1[0]=float(pred1[0])
-    pred1[2]=float(pred1[2])
-    pred1[4]=float(pred1[4])
-    pred1[5]=float(pred1[5])    
-    pred1[6]=float(pred1[6])
-    x=np.reshape(pred1,(1,-1))
-    pred1=ct.transform(x).toarray()
-    pred1=model.predict(pred1)
-    if pred1[0]==0:
-        msg='expected income is below 50 k'
-    else:
-        msg='expected income is above 50 k'
-    print(msg)
-    return render_template('predicted.html',pred=msg) 
+    if request.method=='POST':
+        pred1=[x for x in request.form.values()]
+        pred1[0]=float(pred1[0])
+        pred1[2]=float(pred1[2])
+        pred1[4]=float(pred1[4])
+        pred1[5]=float(pred1[5])    
+        pred1[6]=float(pred1[6])
+        x=np.reshape(pred1,(1,-1))
+        pred1=ct.transform(x).toarray()
+        pred1=model.predict(pred1)
+        if pred1[0]==0:
+            msg='expected income is below 50 k'
+        else:
+            msg='expected income is above 50 k'
+        print(msg)
+        return render_template('predicted.html',pred=msg) 
 
 if __name__=='__main__':
     app.run(host='0.0.0.0', port=5000, debug=True) 
