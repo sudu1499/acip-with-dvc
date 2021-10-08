@@ -9,6 +9,7 @@ from sklearn.metrics import accuracy_score
 import pickle as pk
 import os
 import json
+import matplotlib.pyplot as ply
 def metrics(ypred,ytest):
     score=accuracy_score(ytest,ypred)
     print('accuracy score for knn model ',score)
